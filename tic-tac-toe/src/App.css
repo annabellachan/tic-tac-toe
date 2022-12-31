@@ -1,0 +1,107 @@
+
+body {
+  background: #c5d5cb;
+  font: 20px "Merriweather";
+  /* text-align: flex; */
+}
+
+/* .board {
+  display: flex;
+  width: 350px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+} */
+.board {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-color: #E7E4E8;
+    color: #D1B6DC;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  }
+
+/* .square {
+  background: rgb(234, 229, 229);
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 80px;
+  font-family: "Helvetica";
+} */
+.square {
+    border: 6px solid #2c3e50;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+p {
+  font-family: 'Merriweather';
+  margin-left: 80px;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Merriweather';
+}
+
+
